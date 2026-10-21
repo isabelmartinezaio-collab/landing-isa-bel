@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vender para comprar · Isa Bel</title>
+<meta name="description" content="Vende tu casa y compra la siguiente sin quedarte a medias. Valoración gratuita y hoja de ruta con Isabel, agente inmobiliaria online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Questrial&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#FFFFFF;--ink:#2E2823;--ink2:#3B312A;--muted:#5E534B;--sub:#5B6169;--gold:#CBAD75;--clay:#7A5F4B;--sage:#56716E;--sage-l:#EEF4F1;--sage-m:#A2B6B4;--line:#E4DCD2;--rose:#D68F8F}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Questrial',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.5}
+a{color:var(--clay)}a:hover{color:var(--ink2)}
+:focus-visible{outline:3px solid var(--sage);outline-offset:2px}
+img{max-width:100%;display:block}
+.wrap{padding:0 120px}
+h1,h2,h3{font-weight:400;margin:0}
+.script{font-family:'Alex Brush',cursive;line-height:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 28px;border-radius:999px;font-size:18px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-ghost{border:1px solid var(--clay);color:var(--ink2);background:transparent;box-sizing:border-box}
+.btn-sage{background:var(--sage);color:#fff}
+.btn-sage:hover{color:#fff}
+.sec{padding:88px 120px}
+.h2{font-size:44px;line-height:1.15;letter-spacing:-.6px;color:var(--ink)}
+.lead{font-size:20px;line-height:1.6;color:var(--muted)}
+.tick{width:24px;height:24px;flex-shrink:0;margin-top:2px}
+
+/* cabecera */
+header.top{display:flex;align-items:center;justify-content:space-between;padding:22px 120px;border-bottom:1px solid #E4ECE8;background:#fff;gap:24px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.brand .name{font-family:'Alex Brush',cursive;font-size:36px;line-height:1;color:var(--ink2)}
+.brand .slogan{font-size:13px;color:var(--sub)}
+nav.main{display:flex;align-items:center;gap:36px;font-size:16px}
+nav.main a{color:var(--ink2);text-decoration:none}
+nav.main a.cta{display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:999px;background:var(--gold);color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.95fr) minmax(0,.8fr);gap:40px;align-items:center;padding:72px 120px 88px}
+.hero > div:first-child{order:1}
+.visual{order:3;height:600px;align-self:end}
+.roadmap-col{order:2;align-self:end}
+.hero h1{font-size:58px;line-height:1.07;letter-spacing:-1px}
+.hero .lead{max-width:540px}
+.hero .btns{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.hero .small{font-size:15px;color:var(--sub)}
+.visual{position:relative;height:660px;border-radius:36px;background:var(--sage-l);overflow:hidden}
+.visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.card{position:relative;width:100%;background:rgba(255,255,255,.95);border:1px solid #DCE7E2;border-radius:24px;padding:24px;box-shadow:0 24px 60px rgba(59,49,42,.14);display:flex;flex-direction:column;gap:16px}
+.card .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.card .top .t{font-size:20px}.card .top .s{font-size:13px;color:var(--sub)}
+.card .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card .col h4{margin:0 0 12px;font-weight:400;font-size:14px;padding-bottom:10px;border-bottom:2px solid var(--gold);color:var(--clay)}
+.card .col.b h4{border-color:var(--sage-m);color:var(--sage)}
+.card .step{display:flex;gap:10px;font-size:15px;line-height:1.2;margin-bottom:6px}
+.card .step i{width:12px;height:12px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:2px}
+.card .col.b .step i{background:var(--sage-m)}
+.card .ok{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:var(--sage-l);color:#3B4A48;font-size:14px}
+
+/* bloques */
+.two-cards{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.box{border:1px solid var(--line);border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:20px}
+.box h3{font-size:24px;line-height:1.3}
+.box ul,.list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px}
+.box li{display:flex;gap:14px;font-size:18px;line-height:1.5;color:var(--muted)}
+.box li i{width:8px;height:8px;border-radius:50%;background:var(--rose);flex-shrink:0;margin-top:10px}
+.dark-band{display:flex;align-items:center;justify-content:space-between;gap:48px;padding:40px 48px;background:var(--ink2);border-radius:24px;margin-top:32px}
+.dark-band p{margin:0;font-size:22px;line-height:1.5;color:#fff;max-width:780px}
+
+.metodo{background:var(--sage-l)}
+.metodo .head{display:flex;justify-content:space-between;align-items:flex-end;gap:48px}
+.metodo .head p{max-width:500px}
+.three{display:grid;grid-template-columns:repeat(3,1fr)}
+.three > div{display:flex;flex-direction:column;gap:16px;padding:8px 40px 8px 0}
+.three > div + div{padding-left:40px;border-left:1px solid var(--gold)}
+.three h3{font-size:26px;line-height:1.2}
+.three p{margin:0;font-size:18px;line-height:1.6;color:var(--muted)}
+
+.soy{display:grid;grid-template-columns:400px 1fr;gap:96px;align-items:center;padding:88px 120px}
+.soy .pic{position:relative;width:400px;height:580px}
+.soy .pic .bg{position:absolute;left:0;right:0;bottom:0;height:420px;border-radius:32px;background:var(--sage-m)}
+.soy .pic img{position:absolute;bottom:0;left:0;right:0;margin:0 auto;width:216px;height:580px;object-fit:contain;object-position:bottom center}
+.soy .txt{display:flex;flex-direction:column;gap:22px}
+.soy .txt p{margin:0;font-size:19px;line-height:1.65;color:var(--muted)}
+.soy .sign{font-family:'Alex Brush',cursive;font-size:52px;line-height:1;color:#9C7C64}
+
+.pasos{border-top:1px solid #E4ECE8;display:flex;flex-direction:column;gap:60px}
+.pasos .head{display:flex;justify-content:space-between;align-items:flex-end;gap:48px}
+.pasos .head p{max-width:460px}
+ol.steps{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);column-gap:48px;row-gap:56px}
+ol.steps li{display:flex;flex-direction:column;gap:12px;padding-top:24px;border-top:2px solid var(--gold)}
+ol.steps .n{font-size:44px;line-height:1;color:#9C7C64}
+ol.steps h3{font-size:22px;line-height:1.3}
+ol.steps p{margin:0;font-size:17px;line-height:1.55;color:var(--muted)}
+
+.campana{background:var(--ink2);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.campana h2{color:#fff}
+.campana > div:first-child p{font-size:20px;line-height:1.6;color:#D9CFC6}
+.campana ul{margin:0;padding:0;list-style:none}
+.campana li{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid rgba(203,173,117,.35)}
+.campana li:last-child{border-bottom:0}
+.campana li h3{font-size:22px;line-height:1.3;color:#fff;margin-bottom:8px}
+.campana li p{margin:0;font-size:17px;line-height:1.55;color:#D9CFC6}
+.campana svg{flex-shrink:0}
+
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.dos > div{border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:22px}
+.dos .si{background:var(--sage-l)}.dos .no{background:#F7EAE8}
+.dos h3{font-size:24px}
+.dos li{display:flex;gap:14px;font-size:18px;line-height:1.5;color:var(--ink)}
+.dos li svg{flex-shrink:0;margin-top:2px}
+
+.valor{background:var(--sage-l);display:grid;grid-template-columns:minmax(0,1fr) 560px;gap:80px;align-items:start}
+.valor .left{display:flex;flex-direction:column;gap:24px}
+.valor .left ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px}
+.valor .left li{display:flex;gap:14px;font-size:18px;line-height:1.5}
+.contacto-box{padding-top:28px;margin-top:8px;border-top:1px solid #C9D6D1;display:flex;flex-direction:column;gap:8px}
+.contacto-box a.big{font-size:24px;color:var(--ink);text-decoration:none}
+.form-card{background:#fff;border-radius:28px;padding:44px;box-shadow:0 24px 60px rgba(59,49,42,.08)}
+.form-card h3{font-size:24px;margin-bottom:20px}
+.form-card form{display:flex;flex-direction:column;gap:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font-size:15px;color:var(--ink2)}
+.field input,.field select,.field textarea{height:52px;width:100%;padding:0 16px;border:1px solid #C9D6D1;border-radius:12px;font-family:inherit;font-size:17px;color:var(--ink);background:#fff}
+.field textarea{height:110px;padding:12px 16px;resize:vertical}
+.check{display:flex;gap:12px;align-items:flex-start}
+.check input{width:20px;height:20px;margin:3px 0 0;accent-color:var(--clay);flex-shrink:0}
+.check label{font-size:15px;line-height:1.5;color:var(--muted)}
+.submit{height:56px;width:100%;border:0;border-radius:999px;background:var(--gold);color:var(--ink);font-family:inherit;font-size:18px;cursor:pointer}
+.submit:disabled{opacity:.6;cursor:wait}
+.legal-small{margin:0;font-size:13px;line-height:1.55;color:var(--sub)}
+.msg{font-size:16px;line-height:1.5;padding:12px 14px;border-radius:12px;display:none}
+.msg.ok{display:block;background:var(--sage-l);color:#2E4442}
+.msg.err{display:block;background:#F7EAE8;color:#7A2E2E}
+.hide{display:none}
+.thanks{display:none;flex-direction:column;gap:16px;align-items:flex-start;padding:24px 0}
+.thanks.show{display:flex}
+.thanks h3{font-size:26px;line-height:1.3}
+.thanks p{margin:0;font-size:18px;line-height:1.6;color:var(--muted)}
+
+.faq{display:flex;flex-direction:column;gap:52px}
+.faq .grid{display:grid;grid-template-columns:1fr 1fr;column-gap:64px;row-gap:36px}
+.faq .q{display:flex;flex-direction:column;gap:10px;padding-top:24px;border-top:1px solid var(--line)}
+.faq h3{font-size:21px;line-height:1.35}
+.faq p{margin:0;font-size:17px;line-height:1.6;color:var(--muted)}
+
+footer{background:var(--ink2);padding:88px 120px 48px;display:flex;flex-direction:column;gap:64px}
+footer .cta-row{display:flex;justify-content:space-between;align-items:flex-end;gap:64px}
+footer h2{font-size:52px;line-height:1.1;letter-spacing:-.8px;color:#fff}
+footer .cta-row p{margin:18px 0 0;font-size:20px;line-height:1.6;color:#D9CFC6;max-width:640px}
+footer .btns{display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-end}
+footer .btn-outline{border:1px solid var(--gold);color:#fff;background:transparent;box-sizing:border-box}
+footer .bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;padding-top:32px;border-top:1px solid rgba(203,173,117,.35)}
+footer .bottom p{margin:0;font-size:14px;line-height:1.5;color:#D9CFC6;max-width:440px}
+footer nav{display:flex;gap:20px;font-size:14px}
+footer nav a{color:#D9CFC6}
+footer .brand .name{color:#fff}footer .brand .slogan{color:#D9CFC6}
+
+.wa-float{position:fixed;right:32px;bottom:32px;display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 22px 0 18px;border-radius:999px;background:var(--sage);color:#fff;font-size:17px;text-decoration:none;box-shadow:0 12px 30px rgba(59,49,42,.25);z-index:10}
+.wa-float:hover{color:#fff}
+
+@media (max-width:1024px){
+  .wrap,.sec,.hero,.soy,header.top,footer{padding-left:40px;padding-right:40px}
+  .hero{grid-template-columns:1fr;gap:40px;padding-top:48px}
+  .hero > div:first-child,.visual,.roadmap-col{order:0}
+  .roadmap-col{align-self:auto}
+  .hero h1{font-size:44px}
+  .visual{height:560px}
+  .three,ol.steps,.faq .grid{grid-template-columns:1fr 1fr}
+  .soy{grid-template-columns:1fr;gap:48px}
+  .campana,.valor,.dos,.two-cards,.vp-grid{grid-template-columns:1fr}
+  .valor{gap:48px}
+  .metodo .head,.pasos .head,footer .cta-row,footer .bottom{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:720px){
+  header.top{flex-wrap:wrap;padding:16px 20px}
+  nav.main{width:100%;flex-wrap:wrap;gap:14px 20px;font-size:15px}
+  nav.main a.cta{height:44px}
+  .wrap,.sec,.hero,.soy,footer{padding-left:20px;padding-right:20px}
+  .sec{padding-top:56px;padding-bottom:56px}
+  .hero{padding-top:32px;padding-bottom:56px}
+  .hero h1{font-size:34px}
+  .h2{font-size:30px}
+  .lead{font-size:18px}
+  .visual{height:auto;display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:24px}
+  .visual img{position:static;width:100%;height:auto;max-height:340px;object-fit:contain;object-position:bottom}
+  .card{position:static;width:auto}
+  .btn{height:52px;font-size:17px;padding:0 22px}
+  .two-cards,.dos,.grid2,.three,ol.steps,.faq .grid{grid-template-columns:1fr}
+  .three > div{padding:8px 0}
+  .three > div + div{padding-left:0;border-left:0;border-top:1px solid var(--gold);padding-top:24px}
+  .dark-band{flex-direction:column;align-items:flex-start;padding:28px}
+  .form-card{padding:24px}
+  .soy .pic{width:100%;height:440px}
+  .soy .pic .bg{height:300px}
+  .soy .pic img{width:170px;height:440px}
+  footer h2{font-size:38px}
+  .wa-float{right:16px;bottom:16px;height:52px;font-size:16px;padding:0 18px}
+  footer .btns{justify-content:flex-start}
+}
+.vp-grid{display:grid;grid-template-columns:minmax(0,.6fr) minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:stretch}
+.vp-grid .box{padding:32px;gap:16px}
+.vp-photo{position:relative;min-height:340px}
+.vp-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;border-radius:24px}
+@media (max-width:1024px){.vp-grid{grid-template-columns:minmax(0,1fr)}.vp-photo{min-height:300px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#inicio" aria-label="Isa Bel, ir al inicio"><img src="img/logo-isa-bel.png" alt="Isa Bel. Rumbo claro. Trato cercano." style="height:84px;width:auto;display:block"></a>
+  <nav class="main" aria-label="Principal">
+    <a href="#metodo">El método</a>
+    <a href="#pasos">Cómo trabajo</a>
+    <a href="#faq">Preguntas</a>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <div style="display:flex;flex-direction:column;gap:28px">
+    <h1>Vende tu casa y compra la siguiente sin quedarte a medias.</h1>
+    <p class="lead">Coordino tu venta y tu compra como una sola operación, con un calendario claro desde el primer día. Para familias que necesitan más espacio, un ascensor o vivir más cerca de todo.</p>
+    <div class="btns">
+      <a class="btn btn-gold" href="#valoracion">Quiero mi valoración gratuita</a>
+      <a class="btn btn-ghost" href="#metodo">Ver cómo trabajo</a>
+    </div>
+    <p class="small">Sin compromiso. Hablas directamente conmigo, Isabel.</p>
+  </div>
+
+  <div class="visual">
+    <img src="img/isabel-hero.webp" alt="Isabel, sonriente, con las manos en los bolsillos">
+  </div>
+  <div class="roadmap-col">
+    <div class="card">
+      <div class="top"><div class="t">Tu hoja de ruta</div><div class="s">Un solo calendario</div></div>
+      <div class="cols">
+        <div class="col">
+          <h4>Tu venta</h4>
+          <div class="step"><i></i><span>Valoración honesta</span></div>
+          <div class="step"><i></i><span>Preparación y fotos</span></div>
+          <div class="step"><i></i><span>Publicación y campaña</span></div>
+          <div class="step"><i></i><span>Oferta y arras</span></div>
+        </div>
+        <div class="col b">
+          <h4>Tu compra</h4>
+          <div class="step"><i></i><span>Qué necesitáis</span></div>
+          <div class="step"><i></i><span>Búsqueda y visitas</span></div>
+          <div class="step"><i></i><span>Negociación</span></div>
+          <div class="step"><i></i><span>Oferta y arras</span></div>
+        </div>
+      </div>
+      <div class="ok">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        <span>Te aviso de cada paso antes de que llegue.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--sage-l);display:flex;flex-direction:column;gap:44px">
+  <h2 class="h2">¿Tu casa se os ha quedado pequeña?</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px" class="motivos">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="width:56px;height:56px;border-radius:50%;background:#fff;color:var(--sage);display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h5v-4h5v-4h5V8h3"/></svg></div>
+      <p style="margin:0;font-size:20px;line-height:1.5">Subes la compra por la escalera y ya no te parece normal.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="width:56px;height:56px;border-radius:50%;background:#fff;color:var(--sage);display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7"/><path d="M3 14h18v4"/><path d="M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11" r="2"/></svg></div>
+      <p style="margin:0;font-size:20px;line-height:1.5">Los peques necesitan su propio espacio y hace tiempo que no lo tienen.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="width:56px;height:56px;border-radius:50%;background:#fff;color:var(--sage);display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+      <p style="margin:0;font-size:20px;line-height:1.5">Colegio, centro y servicios te quedan lejos, y dependes del coche para todo.</p>
+    </div>
+  </div>
+  <p class="lead" style="margin:0;max-width:860px">Si te has reconocido en alguna, no es un capricho: tu casa ya no encaja con vuestra vida. Y cada mes sin decidirte es un mes menos disfrutando de lo que necesitáis.</p>
+</section>
+
+<section class="sec" style="display:flex;flex-direction:column;gap:48px">
+  <div style="display:flex;flex-direction:column;gap:16px;max-width:760px">
+    <h2 class="h2">¿Vender primero o comprar primero?</h2>
+    <p class="lead" style="margin:0">Es la duda que más escucho. Y los dos caminos tienen riesgo si nadie coordina los tiempos.</p>
+  </div>
+  <div class="vp-grid">
+    <div class="vp-photo"><img src="img/isabel-222242.jpg" alt="Isabel con documentación en la mano, sonriendo"></div>
+    <div class="box">
+      <h3>Si vendes antes de tener dónde ir</h3>
+      <ul>
+        <li><i></i><span>Puedes verte con fecha de entrega y sin casa nueva.</span></li>
+        <li><i></i><span>Mudanzas dobles, guardamuebles o un alquiler puente que no tenías previsto.</span></li>
+        <li><i></i><span>Prisa por comprar lo primero que aparece.</span></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Si compras antes de vender</h3>
+      <ul>
+        <li><i></i><span>Puedes acabar pagando dos cuotas a la vez.</span></li>
+        <li><i></i><span>Si tu venta se retrasa, arriesgas las arras de la casa que quieres.</span></li>
+        <li><i></i><span>Presión para bajar el precio de la tuya y cerrar como sea.</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="dark-band">
+    <p>Por eso lo primero que hago siempre es el calendario de la operación completa: qué va primero, qué depende de qué y cuándo. No son dos procesos sueltos. Es una sola hoja de ruta.</p>
+    <a class="btn btn-gold" href="#valoracion" style="flex-shrink:0">Quiero mi hoja de ruta</a>
+  </div>
+</section>
+
+<section id="metodo" class="sec metodo" style="display:flex;flex-direction:column;gap:56px">
+  <div class="head">
+    <h2 class="h2" style="max-width:580px">Método Brújula Inmobiliaria</h2>
+    <p class="lead" style="margin:0">Tres ideas sostienen cómo trabajo contigo, desde el primer día hasta que tienes las llaves.</p>
+  </div>
+  <div class="three">
+    <div>
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7A5F4B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 L13.4 13.4 L8.5 15.5 L10.6 10.6 Z"/></svg>
+      <h3>Proceso sin caos</h3>
+      <p>Coordino tu venta y tu compra como una sola operación, con un calendario claro desde el primer día.</p>
+    </div>
+    <div>
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7A5F4B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 15a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/></svg>
+      <h3>Cercanía real</h3>
+      <p>Comunicación directa y sin tecnicismos. Soy la misma persona en redes que cuando nos sentamos a hablar.</p>
+    </div>
+    <div>
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7A5F4B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16"/><path d="M7 20h10"/><path d="M5 8h14"/><path d="M5 8l-3 6a3 3 0 0 0 6 0z"/><path d="M19 8l-3 6a3 3 0 0 0 6 0z"/></svg>
+      <h3>Criterio honesto</h3>
+      <p>Te digo si de verdad te compensa una operación, aunque no sea lo que esperabas oír.</p>
+    </div>
+  </div>
+</section>
+
+<section class="soy">
+  <div class="pic">
+    <div class="bg"></div>
+    <img src="img/isabel-telefono.webp" alt="Isabel sonriendo mientras habla por teléfono">
+  </div>
+  <div class="txt">
+    <h2 class="h2">Soy Isabel</h2>
+    <p>Llevo años en el sector inmobiliario y empecé por algo muy simple: el trato con la gente. Después de acompañar de cerca a muchas familias que vendían su casa para comprar otra mejor, con los nervios, las prisas y la sensación de no saber en qué punto estaban, decidí hacerlo de otra manera: con más cercanía, más criterio y menos escaparate.</p>
+    <p>Trabajo como agente inmobiliaria online en toda España y formo parte de la Red Inmobiliaria Colaborativa del grupo Agente Inmobiliario Online. Colaboro con agentes que trabajan con la misma honestidad, para que tu casa llegue a más compradores y tu próxima vivienda no dependa de una sola zona.</p>
+    <span class="sign">Isabel</span>
+  </div>
+</section>
+
+<section id="pasos" class="sec pasos">
+  <div class="head">
+    <h2 class="h2" style="max-width:620px">Cómo trabajamos juntos, paso a paso</h2>
+    <p class="lead" style="margin:0">Siempre sabrás en qué punto estás y qué viene después.</p>
+  </div>
+  <ol class="steps">
+    <li><span class="n">1</span><h3>Valoración y hoja de ruta</h3><p>Analizamos tu vivienda con datos reales de mercado, sin inflar el precio, y dibujamos el calendario de toda la operación.</p></li>
+    <li><span class="n">2</span><h3>Preparación</h3><p>Fotografías, ficha de la vivienda y estrategia de publicación pensada para tu casa.</p></li>
+    <li><span class="n">3</span><h3>Publicación y difusión</h3><p>Portales y, al firmar el encargo de venta, una campaña propia en redes sociales para tu vivienda.</p></li>
+    <li><span class="n">4</span><h3>Visitas y negociación</h3><p>Gestiono las visitas y negocio en tu interés, no en el mío.</p></li>
+    <li><span class="n">5</span><h3>Coordinación con tu compra</h3><p>Sincronizamos las dos operaciones para que no te quedes a medias ni con prisas.</p></li>
+    <li><span class="n">6</span><h3>Acompañamiento hasta la firma</h3><p>Sigo presente en cada trámite, hasta que tienes las llaves.</p></li>
+  </ol>
+</section>
+
+<section class="sec campana" style="gap:80px">
+  <div style="display:flex;flex-direction:column;gap:24px">
+    <h2 class="h2">Tu casa no se queda esperando en un portal</h2>
+    <p>Cuando firmas conmigo el encargo de venta, no me limito a publicar tu vivienda en los portales de siempre. Diseño y lanzo una campaña en redes sociales específica para tu casa, con su propio sistema de captación de interesados, e invierto en publicidad en Facebook e Instagram. Esa inversión corre de mi parte, no de la tuya.</p>
+  </div>
+  <ul>
+    <li>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CBAD75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M19 6a8 8 0 0 1 0 12"/></svg>
+      <div><h3>Campaña propia para tu vivienda</h3><p>Contenido en redes pensado para tu casa y para quien de verdad puede comprarla.</p></div>
+    </li>
+    <li>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CBAD75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16l-6 7.5V19l-4 2v-8.5z"/></svg>
+      <div><h3>Captación de interesados</h3><p>Un embudo propio para llegar a personas realmente interesadas, no solo a quien mira portales cada día.</p></div>
+    </li>
+    <li>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CBAD75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 8.8a4 4 0 1 0 0 6.4"/><path d="M7.5 11h5.5"/><path d="M7.5 13.2h5.5"/></svg>
+      <div><h3>Publicidad en Meta a mi cargo</h3><p>Los anuncios en Facebook e Instagram los pago yo. Tú no pones ese dinero.</p></div>
+    </li>
+  </ul>
+</section>
+
+<section class="sec" style="display:flex;flex-direction:column;gap:52px">
+  <h2 class="h2">Lo que sí puedo prometerte, y lo que no</h2>
+  <div class="dos">
+    <div class="si">
+      <h3>Lo que sí</h3>
+      <ul class="list">
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Te aviso de cada paso antes de que llegue, para que nada te pille por sorpresa.</span></li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Defiendo tu interés, no solo cerrar rápido.</span></li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Si surge un imprevisto, lo resolvemos con calma, no con alarma.</span></li>
+      </ul>
+    </div>
+    <div class="no">
+      <h3>Lo que no</h3>
+      <ul class="list">
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A85A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 7L7 17"/></svg><span>Prometerte un precio inflado solo para conseguir el encargo.</span></li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A85A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 7L7 17"/></svg><span>Decirte que sí a todo.</span></li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A85A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 7L7 17"/></svg><span>Desaparecer en mitad del proceso.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="valoracion" class="sec valor">
+  <div class="left">
+    <h2 class="h2">Tu valoración gratuita y tu hoja de ruta</h2>
+    <p class="lead" style="margin:0">Una valoración honesta, con datos reales. Cuéntame en qué punto estás y te contesto personalmente para concertar una primera conversación, sin compromiso.</p>
+    <ul>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Un precio de salida realista, explicado con operaciones comparables de tu zona.</span></li>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>El calendario de tu venta y tu compra, coordinado desde el principio.</span></li>
+      <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Mi opinión sincera sobre si te compensa vender ahora.</span></li>
+    </ul>
+    <div class="contacto-box">
+      <p style="margin:0;font-size:16px;color:var(--muted)">¿Prefieres escribirme? Usa el formulario o WhatsApp.</p>
+      <a class="btn btn-sage" href="https://wa.me/34688761876?text=Hola%20Isabel%2C%20quiero%20informaci%C3%B3n%20para%20vender%20mi%20casa%20y%20comprar%20otra." target="_blank" rel="noopener" style="align-self:flex-start;height:48px;font-size:17px;padding:0 20px;margin:4px 0">Escríbeme por WhatsApp</a>
+      <a href="mailto:isabelmartinez.aio@gmail.com" style="font-size:18px">isabelmartinez.aio@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <div id="form-wrap">
+      <h3>Cuéntame tu caso</h3>
+      <form id="contact-form" novalidate>
+        <div class="grid2">
+          <div class="field"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" type="text" autocomplete="name" required maxlength="120" placeholder="Tu nombre"></div>
+          <div class="field"><label for="f-tel">Teléfono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel" required maxlength="20" placeholder="600 000 000"></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160" placeholder="tu@email.com"></div>
+          <div class="field">
+            <label for="f-tipo">Tipo de vivienda</label>
+            <select id="f-tipo" name="tipo_vivienda" required>
+              <option value="">Elige una opción</option>
+              <option value="piso">Piso</option>
+              <option value="casa">Casa</option>
+              <option value="local">Local</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-mensaje">Mensaje (opcional)</label>
+          <textarea id="f-mensaje" name="mensaje" maxlength="1000" placeholder="Cuéntame en qué punto estás"></textarea>
+        </div>
+        <div class="check">
+          <input id="f-consent" name="consentimiento" type="checkbox" required>
+          <label for="f-consent">He leído y acepto la <a href="privacidad.html">política de privacidad</a>. Autorizo que Isabel Martínez Zugazaga trate mis datos personales para responder a mi consulta sobre la compra o venta de vivienda. Puedo retirar este consentimiento en cualquier momento.</label>
+        </div>
+        <p id="msg" class="msg" role="status" aria-live="polite"></p>
+        <button id="submit-btn" class="submit" type="submit">Pedir mi valoración gratuita</button>
+        <p class="legal-small">Responsable: Isabel Martínez Zugazaga (NIF 30657388K). Finalidad: atender tu solicitud. Legitimación: tu consentimiento. Derechos: acceso, rectificación, supresión y resto de derechos escribiendo a isabelmartinez.aio@gmail.com.</p>
+      </form>
+    </div>
+    <div id="thanks" class="thanks" aria-live="polite">
+      <div style="width:56px;height:56px;border-radius:50%;background:var(--sage-l);display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <h3>Recibido. Gracias por contarme tu caso.</h3>
+      <p>Te escribo en cuanto lo vea para buscar un momento y hablar con calma. Si lo prefieres, también puedes escribirme por WhatsApp.</p>
+      <button id="again" class="submit" type="button" style="width:auto;height:44px;padding:0 4px;background:transparent;color:var(--clay);text-decoration:underline;font-size:16px">Enviar otra consulta</button>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="sec faq">
+  <h2 class="h2">Preguntas frecuentes</h2>
+  <div class="grid">
+    <div class="q"><h3>¿Qué es mejor, vender primero o comprar primero?</h3><p>Depende de tu caso: tu margen económico, si necesitas hipoteca para la nueva y cómo se mueve el mercado en tu zona. Lo decidimos juntos, con el calendario completo delante.</p></div>
+    <div class="q"><h3>¿Y si todavía no he encontrado mi próxima casa?</h3><p>Es lo más habitual. Empezamos por la valoración y la hoja de ruta, y te acompaño en la búsqueda para que las dos operaciones encajen.</p></div>
+    <div class="q"><h3>¿Mi casa solo la vas a mover tú?</h3><p>No. Colaboro con agentes de la Red Inmobiliaria Colaborativa y, si en tu zona no hay ninguno, me dirijo directamente a las agencias de allí. La diferencia es que tú vas de la mano conmigo, no con quince agencias: soy tu representante y la única persona que habla con colaboradores y agencias. Al firmar el encargo de venta activo además la campaña propia en redes, con la publicidad a mi cargo.</p></div>
+    <div class="q"><h3>¿Y si me dices que no me compensa vender ahora?</h3><p>Te lo diré igual, con datos. Mi trabajo es defender tu interés, no cerrar rápido.</p></div>
+    <div class="q"><h3>¿La valoración es una tasación oficial?</h3><p>No. Es una valoración gratuita basada en comparables reales de mercado. La tasación oficial para la hipoteca la hace una sociedad de tasación homologada.</p></div>
+    <div class="q"><h3>¿Trabajas en toda España?</h3><p>Sí. Trabajo online y, allí donde haga falta estar en persona, colaboro con agentes de la Red Inmobiliaria Colaborativa que trabajan con la misma honestidad.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="cta-row">
+    <div>
+      <h2>¿Hablamos?</h2>
+      <p>Si estás pensando en vender para comprar, escríbeme y lo vemos con calma, sin compromiso.</p>
+    </div>
+    <div class="btns">
+      <a class="btn btn-gold" href="#valoracion">Pide tu valoración gratuita</a>
+      <a class="btn btn-sage" href="https://wa.me/34688761876?text=Hola%20Isabel%2C%20quiero%20informaci%C3%B3n%20para%20vender%20mi%20casa%20y%20comprar%20otra." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="brand">
+      <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#CBAD75" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 22 L24 7 L43 22"/><path d="M10 18 V41 H38 V18"/><circle cx="19" cy="29" r="4.5"/><path d="M23.5 29 H33"/><path d="M29.5 29 V32.5"/><path d="M33 29 V33.5"/></svg>
+      <span style="display:flex;flex-direction:column;gap:2px"><span class="name">Isa Bel</span><span class="slogan">Rumbo claro. Trato cercano.</span></span>
+    </div>
+    <p>Isa Bel, agente inmobiliaria online en toda España. Colaboro con la Red Inmobiliaria Colaborativa de Agente Inmobiliario Online.</p>
+    <nav aria-label="Información legal">
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="privacidad.html">Privacidad</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/34688761876?text=Hola%20Isabel%2C%20quiero%20informaci%C3%B3n%20para%20vender%20mi%20casa%20y%20comprar%20otra." target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+(function () {
+  // Proyecto Supabase: isabel-landing-vender-para-comprar (eu-west-3, París)
+  var SUPABASE_URL = 'https://npulgureyhwpgsfjrcai.supabase.co';
+  var SUPABASE_KEY = 'sb_publishable_4TPDSOa8VZUDcjtnftkR8Q_5IKaKglU';
+
+  var form = document.getElementById('contact-form');
+  var btn = document.getElementById('submit-btn');
+  var msg = document.getElementById('msg');
+
+  function show(text, kind) {
+    msg.textContent = text;
+    msg.className = 'msg ' + kind;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    msg.className = 'msg';
+
+    var data = {
+      nombre: form.nombre.value.trim(),
+      telefono: form.telefono.value.trim(),
+      email: form.email.value.trim(),
+      tipo_vivienda: form.tipo_vivienda.value,
+      mensaje: form.mensaje.value.trim() || null,
+      consentimiento: form.consentimiento.checked
+    };
+
+    if (!data.nombre || !data.telefono || !data.email || !data.tipo_vivienda) {
+      show('Revisa los campos obligatorios: nombre, teléfono, email y tipo de vivienda.', 'err');
+      return;
+    }
+    if (!data.consentimiento) {
+      show('Para enviar la consulta necesito que aceptes la política de privacidad.', 'err');
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando…';
+
+    fetch(SUPABASE_URL + '/rest/v1/contactos', {
+      method: 'POST',
+      headers: {
+        'apikey': SUPABASE_KEY,
+        'Content-Type': 'application/json',
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify(data)
+    }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      form.reset();
+      document.getElementById('form-wrap').classList.add('hide');
+      document.getElementById('thanks').classList.add('show');
+    }).catch(function () {
+      show('No se ha podido enviar. Inténtalo de nuevo o escríbeme por WhatsApp.', 'err');
+    }).finally(function () {
+      btn.disabled = false;
+      btn.textContent = 'Pedir mi valoración gratuita';
+    });
+  });
+
+  document.getElementById('again').addEventListener('click', function () {
+    document.getElementById('thanks').classList.remove('show');
+    document.getElementById('form-wrap').classList.remove('hide');
+  });
+})();
+</script>
+</body>
+</html>
