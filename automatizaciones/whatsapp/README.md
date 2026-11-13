@@ -1,6 +1,6 @@
 # Kit WhatsApp Business · Isa Bel
 
-Generado el 13/11/2026. Todo gratuito: app WhatsApp Business + Calendly (plan gratuito) + Google Calendar.
+Generado el 13/11/2026. Herramientas sin coste: app WhatsApp Business + Calendly (plan gratuito) + Google Calendar.
 
 ## Cambios hechos en Calendly
 - Zona horaria de la cita «Reunión de Colaboración»: Europe/Berlin → Europe/Madrid (mismas horas: lunes a jueves de 9:00 a 17:00 y viernes de 9:00 a 14:00).
@@ -15,7 +15,10 @@ Generado el 13/11/2026. Todo gratuito: app WhatsApp Business + Calendly (plan gr
 - Confirmar la URL de la web para sustituir [enlace de tu web].
 - Instagram confirmado: @isabel.aio (la cuenta @isabelmz.aio está borrada).
 - Duración de la cita: se queda en 60 min (decisión de Isabel, 13/11/2026).
-- Web: posible web principal isabelmz.digital (WordPress), pendiente de rehacer para Agente Inmobiliario Online.
+- Web: posible web principal isabelmz.digital (WordPress).
+
+## Regla de marca
+- La valoración NUNCA se presenta como «gratuita» ni «gratis». CTA: «Pide tu valoración» / «Valoramos tu casa».
 
 ## Perfil de empresa
 - **Categoría:** Servicio inmobiliario
@@ -45,15 +48,15 @@ Si quieres, ya puedes reservar tu videollamada aquí: https://calendly.com/isabe
 ### /vendo — Cuando alguien escribe «VENDO» (tu estado de WhatsApp lo pide)
 ```
 ¡Qué bien que me escribas! Te cuento cómo lo hago, en tres pasos:
-1. Valoro tu casa gratis, con datos reales de tu zona.
+1. Valoro tu casa con datos reales de tu zona.
 2. Preparamos el calendario de tu venta (y de tu compra, si vas a comprar otra).
 3. Firmamos el encargo de venta y muevo tu casa en una red de 1.500 agentes colaboradores, con una campaña en redes que pago yo.
 ¿Te va mejor que lo hablemos por videollamada o que te llame?
 ```
 
-### /valorar — Cuando piden la valoración gratuita
+### /valorar — Cuando piden la valoración
 ```
-¡Perfecto! Te preparo la valoración gratuita de tu casa. Para empezar, necesito:
+¡Perfecto! Vamos a valorar tu casa. Para empezar, necesito:
 • Dirección o zona
 • Metros aproximados, habitaciones y baños
 • Planta y si tiene ascensor
@@ -130,13 +133,13 @@ Si te viene bien, te cuento cómo se está moviendo tu zona. ¿Mejor por la mañ
 - Seguimiento
 
 ## Catálogo (sin precio)
-- **Valoración gratuita de tu casa:** Un precio de salida realista, explicado con datos de tu zona. Sin compromiso. Enlace: [enlace de tu web]#valoracion
+- **Valoramos tu casa:** Un precio de salida realista, explicado con datos de tu zona. Enlace: [enlace de tu web]#valoracion
 - **Vender para comprar · Método Brújula:** Tu venta y tu compra coordinadas en un solo calendario, para que no te quedes a medias. Tú hablas con una sola persona. Enlace: [enlace de tu web]
 - **Videollamada conmigo:** Unos 60 minutos por Zoom para ver tu caso con calma. Elige tú el día y la hora. Enlace: https://calendly.com/isabelmartinez-aio
 
 ## Enlaces y QR
 - **Bio de Instagram** (`qr/qr-instagram.png`): https://wa.me/34688761876?text=Hola%20Isabel%2C%20vengo%20de%20Instagram%20y%20quiero%20informaci%C3%B3n%20para%20vender%20mi%20casa.
 - **Estados e historias («Escribe VENDO»)** (`qr/qr-vendo.png`): https://wa.me/34688761876?text=VENDO
-- **Píldoras y posts que piden la valoración** (`qr/qr-valorar.png`): https://wa.me/34688761876?text=Hola%20Isabel%2C%20quiero%20mi%20valoraci%C3%B3n%20gratuita.%20VALORAR
+- **Píldoras y posts que piden la valoración** (`qr/qr-valorar.png`): https://wa.me/34688761876?text=Hola%20Isabel%2C%20quiero%20valorar%20mi%20casa.%20VALORAR
 - **Tarjeta de visita o cartel** (`qr/qr-tarjeta.png`): https://wa.me/34688761876?text=Hola%20Isabel%2C%20tengo%20tu%20tarjeta%20y%20me%20gustar%C3%ADa%20hablar%20contigo.
 - **Reserva directa de videollamada** (`qr/qr-calendly.png`): https://calendly.com/isabelmartinez-aio
