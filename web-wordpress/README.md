@@ -8,3 +8,9 @@ Rediseño de la web de Asistente Virtual a Agente Inmobiliario Online.
   las páginas de asistente virtual pasan a borrador cuando se publique la nueva portada;
   la web principal (WordPress o landing de Vercel) se decide después de ver esta propuesta.
 - Se conserva sin tocar su borrador anterior «Agente Inmobiliario Online (AIO)» (ID 350).
+
+## Versión 2 (13/11/2026)
+- Página más visual: tarjetas con símbolo, textos de 3 a 7 palabras, preguntas desplegables.
+- Foto de portada elegida: `20261007_133500.jpg` (Drive, carpeta «10 MATERIAL FOTOS_VIDEOS»),
+  recortada en `isabel-portada.jpg` (1200x1600) y `isabel-portada-web.jpg` (720x960).
+  Pendiente de subir a la biblioteca de medios de WordPress y ponerla en la portada (ahora hay una imagen provisional, ID 355).
