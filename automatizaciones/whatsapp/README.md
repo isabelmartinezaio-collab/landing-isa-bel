@@ -13,7 +13,9 @@ Generado el 13/11/2026. Todo gratuito: app WhatsApp Business + Calendly (plan gr
 - Cambiar el enlace /30min de la cita por /videollamada.
 - Conectar Google Calendar en Calendly, si no lo está.
 - Confirmar la URL de la web para sustituir [enlace de tu web].
-- Confirmar el usuario de Instagram (aparecen @isabelmz.aio y @isabel.aio en distintos sitios).
+- Instagram confirmado: @isabel.aio (la cuenta @isabelmz.aio está borrada).
+- Duración de la cita: se queda en 60 min (decisión de Isabel, 13/11/2026).
+- Web: posible web principal isabelmz.digital (WordPress), pendiente de rehacer para Agente Inmobiliario Online.
 
 ## Perfil de empresa
 - **Categoría:** Servicio inmobiliario
