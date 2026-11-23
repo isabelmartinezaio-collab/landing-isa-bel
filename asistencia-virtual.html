@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistencia virtual · Isa Bel</title>
+<meta name="description" content="Asistencia virtual y digitalización para inmobiliarias tradicionales y pequeñas empresas: WhatsApp Business, agenda online, formularios y orden administrativo, con Isabel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Questrial&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#FFFFFF;--ink:#2E2823;--ink2:#3B312A;--muted:#5E534B;--sub:#5B6169;--gold:#CBAD75;--clay:#7A5F4B;--taupe:#9C7C64;--sage:#56716E;--sage-l:#EEF4F1;--sage-m:#A2B6B4;--line:#E4DCD2;--rose:#D68F8F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Questrial',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--ivory);color:var(--ink);line-height:1.5}
+a{color:var(--clay)}a:hover{color:var(--ink2)}
+:focus-visible{outline:3px solid var(--sage);outline-offset:2px}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-weight:400;margin:0}
+p{margin:0}
+.script{font-family:'Alex Brush',cursive;line-height:1;color:var(--taupe)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 28px;border-radius:999px;font-size:18px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-ghost{border:1px solid var(--clay);color:var(--ink2);background:transparent}
+.btn-sage{background:var(--sage);color:#fff}.btn-sage:hover{color:#fff}
+.sec{padding:88px 120px}
+.h2{font-size:44px;line-height:1.15;letter-spacing:-.6px;color:var(--ink)}
+.lead{font-size:20px;line-height:1.6;color:var(--muted)}
+.eyebrow{display:inline-block;align-self:flex-start;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:999px;border:1px solid var(--gold);color:var(--clay)}
+
+/* cabecera */
+header.top{display:flex;align-items:center;justify-content:space-between;padding:22px 120px;border-bottom:1px solid #E4ECE8;background:#fff;gap:24px}
+.brand{display:flex;align-items:center;text-decoration:none}
+nav.main{display:flex;align-items:center;gap:32px;font-size:16px}
+nav.main a{color:var(--ink2);text-decoration:none}
+nav.main a[aria-current]{color:var(--clay);border-bottom:2px solid var(--gold);padding-bottom:2px}
+nav.main a.cta{display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:999px;background:var(--gold);color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.95fr) minmax(0,.8fr);gap:40px;align-items:center;padding:72px 120px 88px}
+.hero h1{font-size:56px;line-height:1.08;letter-spacing:-1px}
+.hero .btns{display:flex;gap:16px;flex-wrap:wrap}
+.hero .small{font-size:15px;color:var(--sub)}
+.visual{position:relative;height:600px;border-radius:36px;background:var(--sage-l);overflow:hidden;align-self:end}
+.visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.flow{align-self:end;background:rgba(255,255,255,.96);border:1px solid #DCE7E2;border-radius:24px;padding:24px;box-shadow:0 24px 60px rgba(59,49,42,.14);display:flex;flex-direction:column;gap:6px}
+.flow .t{font-size:20px;margin-bottom:2px}.flow .s{font-size:13px;color:var(--sub);margin-bottom:12px}
+.flow .node{display:flex;gap:12px;align-items:center;padding:12px;border-radius:14px;background:#fff;border:1px solid var(--line);font-size:15px;line-height:1.3}
+.flow .node small{display:block;color:var(--sub);font-size:13px}
+.flow .ic{width:36px;height:36px;border-radius:50%;background:var(--sage-l);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--sage)}
+.flow .arrow{display:flex;justify-content:flex-start;padding-left:28px;color:var(--gold)}
+.flow .ok{display:flex;align-items:center;gap:10px;margin-top:10px;padding:10px 12px;border-radius:12px;background:var(--sage-l);color:#3B4A48;font-size:14px}
+
+/* te suena */
+.suena{background:var(--sage-l);display:flex;flex-direction:column;gap:44px}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.four > div{display:flex;flex-direction:column;gap:16px}
+.four .ic{width:56px;height:56px;border-radius:50%;background:#fff;color:var(--sage);display:flex;align-items:center;justify-content:center}
+.four p{font-size:19px;line-height:1.5}
+
+/* test */
+.test{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:start}
+.test .left{display:flex;flex-direction:column;gap:20px;position:sticky;top:24px}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.checks label{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border:1px solid var(--line);border-radius:16px;cursor:pointer;font-size:17px;line-height:1.45;color:var(--ink);transition:background .2s,border-color .2s}
+.checks input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--clay);flex-shrink:0}
+.checks label:has(input:checked){background:var(--sage-l);border-color:var(--sage-m)}
+.result{border-radius:24px;padding:28px;background:var(--ink2);color:#fff;display:flex;flex-direction:column;gap:12px}
+.result .n{font-size:15px;color:#D9CFC6}
+.result .n b{font-weight:400;font-size:40px;color:var(--gold);margin-right:6px}
+.result p{font-size:18px;line-height:1.55;color:#EDE6DF}
+.meter{height:8px;border-radius:999px;background:rgba(255,255,255,.15);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--gold);border-radius:999px;transition:width .3s}
+
+/* servicios */
+.serv{display:flex;flex-direction:column;gap:56px;border-top:1px solid #E4ECE8}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:48px}
+.head p{max-width:480px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.cards article{border:1px solid var(--line);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px}
+.cards h3{font-size:22px;line-height:1.3}
+.cards p{font-size:17px;line-height:1.55;color:var(--muted)}
+.cards ul{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.cards li{display:flex;gap:10px;font-size:15px;line-height:1.45;color:var(--muted)}
+.cards li i{width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:8px}
+
+/* caso propio */
+.caso{background:var(--ink2);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.caso h2{color:#fff}
+.caso > div:first-child{display:flex;flex-direction:column;gap:24px}
+.caso > div:first-child p{font-size:20px;line-height:1.6;color:#D9CFC6}
+.caso ul{margin:0;padding:0;list-style:none}
+.caso li{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid rgba(203,173,117,.35)}
+.caso li:last-child{border-bottom:0}
+.caso li h3{font-size:21px;line-height:1.3;color:#fff;margin-bottom:8px}
+.caso li p{font-size:17px;line-height:1.55;color:#D9CFC6}
+.caso svg{flex-shrink:0}
+
+/* para quién */
+.quien{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:stretch}
+.quien .feat{background:var(--sage-l);border-radius:28px;padding:44px;display:flex;flex-direction:column;gap:18px}
+.quien .feat h3{font-size:28px;line-height:1.25}
+.quien .feat p{font-size:18px;line-height:1.6;color:var(--muted)}
+.quien .other{display:flex;flex-direction:column;gap:20px;justify-content:center}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+.chips li{padding:10px 18px;border-radius:999px;border:1px solid var(--gold);font-size:16px;color:var(--ink2)}
+
+/* orden: 3 sitios + 4 estados */
+.orden{background:var(--sage-l);display:flex;flex-direction:column;gap:52px}
+.sitios{display:grid;grid-template-columns:repeat(3,1fr)}
+.sitios > div{display:flex;flex-direction:column;gap:14px;padding:8px 40px 8px 0}
+.sitios > div + div{padding-left:40px;border-left:1px solid var(--gold)}
+.sitios .num{font-size:44px;line-height:1;color:var(--taupe)}
+.sitios h3{font-size:24px}
+.sitios p{font-size:17px;line-height:1.6;color:var(--muted)}
+.estados{background:#fff;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:20px}
+.estados h3{font-size:22px}
+.estados .row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.estados .st{border-radius:16px;padding:16px;border-top:4px solid var(--gold);background:#FAF8F5;display:flex;flex-direction:column;gap:6px}
+.estados .st:nth-child(2){border-color:var(--sage-m)}
+.estados .st:nth-child(3){border-color:var(--rose)}
+.estados .st:nth-child(4){border-color:var(--sage)}
+.estados .st b{font-weight:400;font-size:17px;color:var(--ink)}
+.estados .st span{font-size:14px;color:var(--muted);line-height:1.45}
+.estados > p{font-size:16px;color:var(--muted)}
+
+/* pasos */
+.pasos{display:flex;flex-direction:column;gap:60px}
+ol.steps{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(5,1fr);column-gap:32px;row-gap:48px}
+ol.steps li{display:flex;flex-direction:column;gap:12px;padding-top:24px;border-top:2px solid var(--gold)}
+ol.steps .n{font-size:44px;line-height:1;color:var(--taupe)}
+ol.steps h3{font-size:21px;line-height:1.3}
+ol.steps p{font-size:16px;line-height:1.55;color:var(--muted)}
+
+/* sí / no */
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.dos > div{border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:22px}
+.dos .si{background:var(--sage-l)}.dos .no{background:#F7EAE8}
+.dos h3{font-size:24px}
+.list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px}
+.dos li{display:flex;gap:14px;font-size:18px;line-height:1.5}
+.dos li svg{flex-shrink:0;margin-top:2px}
+
+/* faq */
+.faq{display:flex;flex-direction:column;gap:52px;border-top:1px solid #E4ECE8}
+.faq .grid{display:grid;grid-template-columns:1fr 1fr;column-gap:64px;row-gap:36px}
+.faq .q{display:flex;flex-direction:column;gap:10px;padding-top:24px;border-top:1px solid var(--line)}
+.faq h3{font-size:21px;line-height:1.35}
+.faq p{font-size:17px;line-height:1.6;color:var(--muted)}
+
+footer{background:var(--ink2);padding:88px 120px 48px;display:flex;flex-direction:column;gap:64px}
+footer .cta-row{display:flex;justify-content:space-between;align-items:flex-end;gap:64px}
+footer h2{font-size:64px;line-height:1;color:#fff}
+footer .cta-row p{margin:18px 0 0;font-size:20px;line-height:1.6;color:#D9CFC6;max-width:640px}
+footer .btns{display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-end}
+footer .bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;padding-top:32px;border-top:1px solid rgba(203,173,117,.35)}
+footer .bottom p{font-size:14px;line-height:1.5;color:#D9CFC6;max-width:440px}
+footer nav{display:flex;gap:20px;font-size:14px;flex-wrap:wrap}
+footer nav a{color:#D9CFC6}
+footer .logo-pill{background:#fff;border-radius:20px;padding:10px 16px;display:inline-flex}
+footer .mail{color:#fff;font-size:18px}
+
+.wa-float{position:fixed;right:32px;bottom:32px;display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 22px 0 18px;border-radius:999px;background:var(--sage);color:#fff;font-size:17px;text-decoration:none;box-shadow:0 12px 30px rgba(59,49,42,.25);z-index:10}
+.wa-float:hover{color:#fff}
+
+@media (max-width:1200px){ol.steps{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:1fr 1fr}.four{grid-template-columns:1fr 1fr}}
+@media (max-width:1024px){
+  .sec,.hero,header.top,footer{padding-left:40px;padding-right:40px}
+  .hero{grid-template-columns:1fr;padding-top:48px}
+  .hero h1{font-size:44px}
+  .visual{height:520px}
+  .test,.caso,.quien,.dos{grid-template-columns:1fr}
+  .test .left{position:static}
+  .head,footer .cta-row,footer .bottom{flex-direction:column;align-items:flex-start}
+  footer .btns{justify-content:flex-start}
+  .estados .row{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  header.top{flex-wrap:wrap;padding:16px 20px}
+  nav.main{width:100%;flex-wrap:wrap;gap:12px 20px;font-size:15px}
+  nav.main a.cta{height:44px}
+  .sec,.hero,footer{padding-left:20px;padding-right:20px}
+  .sec{padding-top:56px;padding-bottom:56px}
+  .hero{padding-top:32px;padding-bottom:56px}
+  .hero h1{font-size:34px}
+  .h2{font-size:30px}
+  .lead{font-size:18px}
+  .visual{height:420px}
+  .btn{height:52px;font-size:17px;padding:0 22px}
+  .four,.cards,ol.steps,.faq .grid,.sitios,.estados .row{grid-template-columns:1fr}
+  .sitios > div{padding:8px 0}
+  .sitios > div + div{padding-left:0;border-left:0;border-top:1px solid var(--gold);padding-top:24px}
+  .quien .feat,.dos > div{padding:28px}
+  footer h2{font-size:48px}
+  .wa-float{right:16px;bottom:16px;height:52px;font-size:16px;padding:0 18px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Isa Bel, ir a la página principal"><img src="img/logo-isa-bel.png" alt="Isa Bel. Rumbo claro. Trato cercano." style="height:72px;width:auto"></a>
+  <nav class="main" aria-label="Principal">
+    <a href="index.html">Vender para comprar</a>
+    <a href="asistencia-virtual.html" aria-current="page">Asistencia virtual</a>
+    <a href="#servicios">Qué hago</a>
+    <a href="#pasos">Cómo trabajo</a>
+    <a href="#faq">Preguntas</a>
+    <a class="cta" href="https://calendly.com/isabelmartinez-aio" target="_blank" rel="noopener">Hablemos</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div style="display:flex;flex-direction:column;gap:28px">
+    <span class="eyebrow">Asistencia virtual para pequeñas empresas</span>
+    <h1>Tu negocio ordenado y conectado, sin cambiar tu forma de trabajar.</h1>
+    <p class="lead" style="max-width:540px">Conecto tu WhatsApp con tu agenda, tus formularios y tus listados, y pongo orden en la parte del negocio que hoy depende de tu memoria. Para inmobiliarias tradicionales y pequeñas empresas que quieren dar el paso a lo digital sin complicarse.</p>
+    <div class="btns">
+      <a class="btn btn-gold" href="https://calendly.com/isabelmartinez-aio" target="_blank" rel="noopener">Reserva una videollamada</a>
+      <a class="btn btn-ghost" href="#test">¿Cómo está tu negocio?</a>
+    </div>
+    <p class="small">Sin compromiso. Hablas directamente conmigo, Isabel.</p>
+  </div>
+
+  <div class="flow" aria-label="Ejemplo de un negocio conectado">
+    <div class="t">Un mensaje, todo en marcha</div>
+    <div class="s">Así queda conectado</div>
+    <div class="node"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5z"/></svg></span><span>Te escriben por WhatsApp<small>Responde la bienvenida al momento</small></span></div>
+    <div class="arrow" aria-hidden="true"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 1v15M2 11l5 5 5-5"/></svg></div>
+    <div class="node"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span>Reservan cita solos<small>Tu agenda online, sin solapes</small></span></div>
+    <div class="arrow" aria-hidden="true"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 1v15M2 11l5 5 5-5"/></svg></div>
+    <div class="node"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><span>El contacto queda guardado<small>En tu listado, con su estado</small></span></div>
+    <div class="ok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Nada depende de que te acuerdes.</span></div>
+  </div>
+
+  <div class="visual">
+    <img src="img/isabel-222242.jpg" alt="Isabel con documentación en la mano, sonriendo">
+  </div>
+</section>
+
+<section class="sec suena">
+  <h2 class="h2">¿Te suena alguna de estas?</h2>
+  <div class="four">
+    <div>
+      <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg></div>
+      <p>Un cliente te escribió por WhatsApp y su mensaje se quedó enterrado entre otros cien.</p>
+    </div>
+    <div>
+      <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+      <p>Tus documentos viven repartidos entre el correo, el escritorio, el Drive y el móvil.</p>
+    </div>
+    <div>
+      <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+      <p>Las citas se cierran por teléfono y se apuntan en una libreta que solo entiendes tú.</p>
+    </div>
+    <div>
+      <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <p>Los seguimientos a clientes y proveedores dependen de que te acuerdes a tiempo.</p>
+    </div>
+  </div>
+  <p class="lead" style="max-width:860px">No es falta de ganas ni de organización. Es que estás llevando tú solo o tú sola demasiadas cosas a la vez, con herramientas que no se hablan entre ellas.</p>
+</section>
+
+<section id="test" class="sec test">
+  <div class="left">
+    <span class="eyebrow">Autodiagnóstico en 1 minuto</span>
+    <h2 class="h2">¿Cómo está la trastienda de tu negocio?</h2>
+    <p class="lead">Marca las situaciones con las que te identifiques. No hay respuestas buenas ni malas: es solo una foto de cómo están las cosas hoy.</p>
+    <div class="result" aria-live="polite">
+      <div class="n"><b id="score">0</b>de 10 marcadas</div>
+      <div class="meter"><i id="meter"></i></div>
+      <p id="verdict">Empieza a marcar y te digo cómo lo veo.</p>
+      <a id="test-cta" class="btn btn-gold" href="https://calendly.com/isabelmartinez-aio" target="_blank" rel="noopener" style="align-self:flex-start;margin-top:6px;height:48px;font-size:17px">Lo vemos juntos</a>
+    </div>
+  </div>
+  <ul class="checks">
+    <li><label><input type="checkbox"><span>Contesto los mensajes de WhatsApp uno a uno, escribiendo lo mismo cada vez.</span></label></li>
+    <li><label><input type="checkbox"><span>Algún mensaje de un cliente se me ha quedado sin contestar sin darme cuenta.</span></label></li>
+    <li><label><input type="checkbox"><span>Uso el mismo WhatsApp para lo personal y para el negocio.</span></label></li>
+    <li><label><input type="checkbox"><span>Las citas las cierro por teléfono o por mensaje, y las apunto a mano.</span></label></li>
+    <li><label><input type="checkbox"><span>Tengo documentos repartidos entre correo, escritorio, Drive y WhatsApp.</span></label></li>
+    <li><label><input type="checkbox"><span>Alguna vez he tardado demasiado en encontrar un documento.</span></label></li>
+    <li><label><input type="checkbox"><span>Los datos de mis clientes están en el móvil, en papel o en varios sitios a la vez.</span></label></li>
+    <li><label><input type="checkbox"><span>Hay seguimientos que dependen únicamente de que yo me acuerde.</span></label></li>
+    <li><label><input type="checkbox"><span>Reviso el correo o el WhatsApp varias veces al día «por si acaso».</span></label></li>
+    <li><label><input type="checkbox"><span>Si mañana no pudiera trabajar, nadie sabría qué está pendiente.</span></label></li>
+  </ul>
+</section>
+
+<section id="servicios" class="sec serv">
+  <div class="head">
+    <h2 class="h2" style="max-width:600px">Qué puedo hacer por tu negocio</h2>
+    <p class="lead">Elegimos juntos lo que de verdad te hace falta. No hace falta hacerlo todo: a veces con dos piezas bien montadas cambia el día a día.</p>
+  </div>
+  <div class="cards">
+    <article>
+      <h3>WhatsApp Business bien montado</h3>
+      <p>Que tu WhatsApp trabaje como el escaparate de tu negocio, no como un chat más.</p>
+      <ul>
+        <li><i></i><span>Perfil de empresa, horario y catálogo de servicios</span></li>
+        <li><i></i><span>Mensajes de bienvenida y de ausencia</span></li>
+        <li><i></i><span>Respuestas rápidas y etiquetas para cada cliente</span></li>
+      </ul>
+    </article>
+    <article>
+      <h3>Agenda online conectada</h3>
+      <p>Tus clientes eligen día y hora sin llamadas de ida y vuelta, y tú no te pisas citas.</p>
+      <ul>
+        <li><i></i><span>Página de reserva con tus horarios reales</span></li>
+        <li><i></i><span>Conectada a tu calendario de Google</span></li>
+        <li><i></i><span>Confirmación y enlace de videollamada automáticos</span></li>
+      </ul>
+    </article>
+    <article>
+      <h3>Contactos que no se pierden</h3>
+      <p>Cada consulta que te llega por la web o por un formulario queda guardada en un solo sitio.</p>
+      <ul>
+        <li><i></i><span>Formularios web con aviso de privacidad</span></li>
+        <li><i></i><span>Un listado de clientes ordenado y fácil de buscar</span></li>
+        <li><i></i><span>Estados claros: nuevo, en curso, cerrado</span></li>
+      </ul>
+    </article>
+    <article>
+      <h3>Enlaces y códigos QR</h3>
+      <p>Que sepas desde dónde te llega cada cliente: Instagram, tu tarjeta, un cartel o tu web.</p>
+      <ul>
+        <li><i></i><span>Enlaces que abren tu WhatsApp con el mensaje escrito</span></li>
+        <li><i></i><span>Códigos QR con tu logo para tarjetas y escaparates</span></li>
+        <li><i></i><span>Comprobados uno a uno antes de entregarlos</span></li>
+      </ul>
+    </article>
+    <article>
+      <h3>Orden administrativo</h3>
+      <p>Correo, documentos y pendientes, cada cosa en su sitio y con una rutina que se mantiene sola.</p>
+      <ul>
+        <li><i></i><span>Carpetas digitales con un criterio claro</span></li>
+        <li><i></i><span>Listado de pendientes y seguimientos</span></li>
+        <li><i></i><span>Una rutina semanal sencilla para no volver al caos</span></li>
+      </ul>
+    </article>
+    <article>
+      <h3>Te lo enseño y te lo dejo escrito</h3>
+      <p>No te dejo un sistema que solo entiendo yo. Te acompaño hasta que lo usas con soltura.</p>
+      <ul>
+        <li><i></i><span>Sesión por videollamada para que lo veas funcionar</span></li>
+        <li><i></i><span>Guía paso a paso con tus textos listos para copiar</span></li>
+        <li><i></i><span>Revisión cuando ya lo has usado unas semanas</span></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="sec caso">
+  <div>
+    <h2 class="h2">Lo he montado primero en mi propio negocio</h2>
+    <p>Antes de ofrecértelo, lo he hecho para mí. Como agente inmobiliaria online trabajo en remoto y con clientes en toda España, así que necesitaba que cada mensaje acabara en una conversación, sin perder a nadie por el camino.</p>
+    <p>Lo que te propongo es lo mismo que uso cada día.</p>
+  </div>
+  <ul>
+    <li>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CBAD75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5z"/></svg>
+      <div><h3>WhatsApp Business con respuestas preparadas</h3><p>Bienvenida, mensaje de ausencia, respuestas rápidas para cada situación y etiquetas para saber en qué punto está cada contacto.</p></div>
+    </li>
+    <li>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CBAD75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+      <div><h3>Agenda de videollamadas online</h3><p>Con mi horario, mi marca y el enlace de reserva en todos mis mensajes.</p></div>
+    </li>
+    <li>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CBAD75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+      <div><h3>Formulario web que guarda cada consulta</h3><p>Lo que me escriben desde esta web queda registrado en una base de datos, con su consentimiento de privacidad.</p></div>
+    </li>
+    <li>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CBAD75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg>
+      <div><h3>Un código QR para cada canal</h3><p>Instagram, tarjeta de visita, estados e historias: cada uno abre mi WhatsApp con su propio mensaje.</p></div>
+    </li>
+  </ul>
+</section>
+
+<section class="sec">
+  <div class="quien">
+    <div class="feat">
+      <span class="eyebrow">Mi sector</span>
+      <h3>Inmobiliarias tradicionales que quieren dar el paso</h3>
+      <p>Conozco el día a día de una agencia desde dentro: las llamadas de interesados, las visitas que hay que cuadrar, los propietarios que quieren saber cómo va su casa y los papeles de cada operación.</p>
+      <p>Te ayudo a ordenar y conectar todo eso para que el equipo dedique su tiempo a lo que de verdad vende: atender a las personas.</p>
+    </div>
+    <div class="other">
+      <h2 class="h2">Y cualquier pequeña empresa que lo necesite</h2>
+      <p class="lead">Si atiendes clientes, das citas o mueves papeles, seguramente hay algo que se puede simplificar.</p>
+      <ul class="chips" aria-label="Ejemplos de negocios">
+        <li>Comercios de barrio</li>
+        <li>Despachos y asesorías</li>
+        <li>Centros de estética y bienestar</li>
+        <li>Academias</li>
+        <li>Talleres y reformas</li>
+        <li>Profesionales autónomos</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec orden">
+  <div class="head">
+    <h2 class="h2" style="max-width:580px">Cada cosa en su sitio</h2>
+    <p class="lead">Gran parte del desorden no es falta de organización: es información repartida en demasiados sitios a la vez. La idea es sencilla: que cada tipo de información tenga un único lugar donde vivir.</p>
+  </div>
+  <div class="sitios">
+    <div><span class="num">1</span><h3>Comunicación</h3><p>WhatsApp y correo, solo para hablar con clientes y proveedores. No para guardar pendientes.</p></div>
+    <div><span class="num">2</span><h3>Documentación</h3><p>Una carpeta digital ordenada para facturas, contratos y certificados, con nombre y fecha.</p></div>
+    <div><span class="num">3</span><h3>Pendientes</h3><p>Un único listado de tareas y seguimientos, donde cada cosa tiene siempre su estado.</p></div>
+  </div>
+  <div class="estados">
+    <h3>Cuatro estados para saber en qué punto está todo</h3>
+    <div class="row">
+      <div class="st"><b>Por hacer</b><span>Pedir una factura a un proveedor</span></div>
+      <div class="st"><b>En curso</b><span>Preparando un presupuesto</span></div>
+      <div class="st"><b>Esperando respuesta</b><span>Presupuesto enviado, sin respuesta</span></div>
+      <div class="st"><b>Cerrado</b><span>Factura recibida y archivada</span></div>
+    </div>
+    <p>Lo importante no es la herramienta, sino que cada pendiente tenga siempre uno de estos estados y que esté al día. Puede ser una hoja de cálculo, un tablero o lo que ya uses.</p>
+  </div>
+</section>
+
+<section id="pasos" class="sec pasos">
+  <div class="head">
+    <h2 class="h2" style="max-width:620px">Cómo trabajamos juntos, paso a paso</h2>
+    <p class="lead">Siempre sabrás en qué punto estás y qué viene después.</p>
+  </div>
+  <ol class="steps">
+    <li><span class="n">1</span><h3>Primera conversación</h3><p>Una videollamada para que me cuentes cómo trabajas hoy y qué te quita más tiempo.</p></li>
+    <li><span class="n">2</span><h3>Propuesta clara</h3><p>Te digo qué haría, en qué orden y con qué herramientas, antes de empezar nada.</p></li>
+    <li><span class="n">3</span><h3>Montaje</h3><p>Lo configuro partiendo de lo que ya usas y lo compruebo todo antes de entregártelo.</p></li>
+    <li><span class="n">4</span><h3>Te lo enseño</h3><p>Lo vemos funcionar juntos y te dejo una guía escrita con tus textos listos.</p></li>
+    <li><span class="n">5</span><h3>Revisión</h3><p>Cuando ya lo has usado unas semanas, ajustamos lo que haga falta.</p></li>
+  </ol>
+</section>
+
+<section class="sec" style="display:flex;flex-direction:column;gap:52px;background:var(--sage-l)">
+  <h2 class="h2">Lo que sí puedo prometerte, y lo que no</h2>
+  <div class="dos">
+    <div class="si" style="background:#fff">
+      <h3>Lo que sí</h3>
+      <ul class="list">
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Partir de lo que ya usas, sin obligarte a aprender diez aplicaciones nuevas.</span></li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Que tus cuentas y los datos de tus clientes sigan siendo tuyos, a tu nombre.</span></li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56716E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Explicártelo todo sin tecnicismos y dejártelo por escrito.</span></li>
+      </ul>
+    </div>
+    <div class="no">
+      <h3>Lo que no</h3>
+      <ul class="list">
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A85A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 7L7 17"/></svg><span>Venderte herramientas de pago que tu negocio todavía no necesita.</span></li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A85A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 7L7 17"/></svg><span>Prometerte que todo se va a hacer solo: lo digital ayuda, no sustituye el trato con tus clientes.</span></li>
+        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A85A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10"/><path d="M17 7L7 17"/></svg><span>Dejarte un sistema que, si yo no estoy, nadie sabe usar.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="sec faq">
+  <h2 class="h2">Preguntas frecuentes</h2>
+  <div class="grid">
+    <div class="q"><h3>¿Necesito saber de tecnología?</h3><p>No. Yo me encargo de montarlo y te lo enseño con calma, paso a paso. Lo que necesito de ti es que me cuentes cómo trabajas.</p></div>
+    <div class="q"><h3>¿Tengo que cambiar todas mis herramientas?</h3><p>No. Empiezo por lo que ya usas y solo te propongo algo nuevo si de verdad te ahorra trabajo.</p></div>
+    <div class="q"><h3>Ahora uso el WhatsApp normal. ¿Pierdo mis chats?</h3><p>Al instalar WhatsApp Business con tu número, la propia app te ofrece pasar tus chats. Ten en cuenta que un mismo número no puede estar en las dos apps a la vez.</p></div>
+    <div class="q"><h3>¿WhatsApp puede contestar solo a cada mensaje?</h3><p>La app gratuita de WhatsApp Business envía la bienvenida y el mensaje de ausencia, y te deja tener respuestas preparadas a dos toques. Responder de forma automática a cada palabra necesita la versión de pago para empresas: te diré con sinceridad si a tu negocio le compensa.</p></div>
+    <div class="q"><h3>¿Trabajas en remoto?</h3><p>Sí. Trabajo online, por videollamada, con negocios de toda España.</p></div>
+    <div class="q"><h3>¿Cuánto cuesta?</h3><p>Depende de lo que necesites. Primero hablamos, y antes de empezar te digo qué haría y cuánto costaría, para que decidas con todo delante.</p></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="cta-row">
+    <div>
+      <h2 class="script" style="color:#fff">Hablemos</h2>
+      <p>Cuéntame cómo trabajas hoy y vemos juntos qué se puede simplificar, sin compromiso.</p>
+    </div>
+    <div class="btns">
+      <a class="btn btn-gold" href="https://calendly.com/isabelmartinez-aio" target="_blank" rel="noopener">Reserva una videollamada</a>
+      <a class="btn btn-sage" href="https://wa.me/34688761876?text=Hola%20Isabel%2C%20vengo%20de%20tu%20web%20y%20quiero%20informaci%C3%B3n%20para%20digitalizar%20mi%20negocio." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="bottom">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span class="logo-pill"><img src="img/logo-isa-bel.png" alt="Isa Bel. Rumbo claro. Trato cercano." style="height:56px;width:auto"></span>
+      <a class="mail" href="mailto:isabelmartinez.aio@gmail.com">isabelmartinez.aio@gmail.com</a>
+    </div>
+    <p>Isa Bel, agente inmobiliaria online en toda España y asistencia virtual para pequeñas empresas. Rumbo claro. Trato cercano.</p>
+    <nav aria-label="Información legal">
+      <a href="index.html">Vender para comprar</a>
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="privacidad.html">Privacidad</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/34688761876?text=Hola%20Isabel%2C%20vengo%20de%20tu%20web%20y%20quiero%20informaci%C3%B3n%20para%20digitalizar%20mi%20negocio." target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+(function () {
+  var boxes = document.querySelectorAll('.checks input');
+  var score = document.getElementById('score');
+  var meter = document.getElementById('meter');
+  var verdict = document.getElementById('verdict');
+  function update() {
+    var n = 0;
+    boxes.forEach(function (b) { if (b.checked) n++; });
+    score.textContent = n;
+    meter.style.width = (n * 10) + '%';
+    if (n === 0) verdict.textContent = 'Empieza a marcar y te digo cómo lo veo.';
+    else if (n <= 2) verdict.textContent = 'Lo tienes bastante controlado. Con un par de ajustes lo puedes mantener así sin esfuerzo.';
+    else if (n <= 6) verdict.textContent = 'Es lo más habitual. Nada grave, pero conviene poner orden antes de que vaya a más.';
+    else verdict.textContent = 'Hay demasiadas cosas dependiendo de tu memoria. Buen momento para montar un sistema sencillo.';
+  }
+  boxes.forEach(function (b) { b.addEventListener('change', update); });
+})();
+</script>
+</body>
+</html>
