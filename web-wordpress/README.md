@@ -12,5 +12,6 @@ Rediseño de la web de Asistente Virtual a Agente Inmobiliario Online.
 ## Versión 2 (13/11/2026)
 - Página más visual: tarjetas con símbolo, textos de 3 a 7 palabras, preguntas desplegables.
 - Fotos reales enviadas por Isabel por el chat (13/11/2026), colocadas en el borrador:
-  - Portada: `isabel-portada.jpg` → WordPress, medio ID 642.
-  - Sobre mí: `isabel-sobre-mi.jpg` → WordPress, medio ID 643.
+  - Portada → WordPress, medio ID 642 («Isabel · Portada»).
+  - Sobre mí → WordPress, medio ID 643 («Isabel · Sobre mí»).
+  - Las fotos solo se guardan en WordPress; se quitaron del repositorio público (26/11/2026).
