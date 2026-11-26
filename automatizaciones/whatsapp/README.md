@@ -79,7 +79,9 @@ Son unos 60 minutos. Al reservar te llega la confirmación con el enlace de Zoom
 
 ### /llamada — Cuando prefieren hablar por teléfono
 ```
-¿Te llamo 10 minutos y lo vemos? Dime si te va mejor por la mañana o por la tarde, y a qué número.
+¿Hablamos 15 minutos por teléfono? Elige el hueco que mejor te venga aquí:
+https://calendar.app.google/wE9KY46Mggzinunk6
+Y si prefieres que te llame yo, dime a qué número y si te va mejor por la mañana o por la tarde.
 ```
 
 ### /solotu — Cuando preguntan si su casa solo la mueves tú
